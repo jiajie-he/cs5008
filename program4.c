@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(){
+  int arr[3] = {10, 23, 9};
+  int i;
+  int max = 0;
+
+  for (i = 0; i < 3; i++){
+    if (arr[i] > max){
+      max = arr[i];
+    }
+  }
+
+  for (i = 0; i < 3; i++){
+    if (max == arr[i]) {
+      printf("The largest number is at index %d\n", i);
+    }
+  }
+  return 0;
+}
